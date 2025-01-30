@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    background-color: #f8f9fa; 
+    font-family: 'Arial', sans-serif;
+}
+
+.hero {
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 80px 0;
+    color: black;
+    text-align: left;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay h2 {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+}
+
+.card {
+    display: inline-block;
+    padding: 5px 15px; 
+    background-color: #343a40; 
+    color: white;
+    border-radius: 0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background-color: #343a40;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.card-body {
+    padding: 20px;
+    color: white;
+}
+
+.footer {
+    background-color: #343a40; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sticky-top .container .list-unstyled {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.sticky-top .container .list-unstyled li {
+    position: relative;
+    margin-right: 15px;
+}
+
+.sticky-top .container .list-unstyled li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #343a40; 
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, border-bottom 0.3s ease;
+    border-radius: 0; 
+}
+
+.sticky-top .container .list-unstyled li a:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid white;
+}
+
+.card-title, .card-text {
+    color: black;
+}
+
+.custom-card {
+    margin: 0 30%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.custom-card .form-group {
+    margin-bottom: 15px;
+}
+
+.custom-card label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.custom-card input[type="text"],
+.custom-card input[type="email"],
+.custom-card textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 8px 16px; 
+    font-size: 14px;
+    border-radius: 0; 
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #808080;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.custom-card h3 {
+    font-weight: bold;
+}
+
+.custom-card p {
+    font-size: 16px;
+}
+
+.demo-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px; 
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 0; 
+    cursor: pointer;
+}
+
+.demo-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* прокрутка наверх */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTop:hover {
+    background-color: #0056b3;
+}
+
+
+
+.photo-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.photo-slide {
+    display: none;
+    width: 100%;
+}
+
+.photo-slide.active {
+    display: block;
+}
+
+.photo-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.photo-slider-btn.prev {
+    left: 10px;
+}
+
+.photo-slider-btn.next {
+    right: 10px;
+}
+
+
+/* Стиль для кнопки */
+#language-button {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background-color: #808080; /* Серая кнопка */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#language-button:hover {
+    background-color: #6c757d; /* Темнее при наведении */
+}
+
+
+
+
+
+
